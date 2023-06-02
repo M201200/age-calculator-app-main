@@ -41,7 +41,10 @@ let button = document.getElementById("button");
 button.addEventListener("click", (event) => {
     event.preventDefault();
     output.forEach(item => item.classList.remove('animation'));
-    output.forEach(item => void item.offsetWidth);
+    
+    // This resets the CSS animation by forcing the browser to reflow the page 
+    void button.offsetWidth; 
+
     output.forEach(item => item.classList.add('animation'));
 })
 
