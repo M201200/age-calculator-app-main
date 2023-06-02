@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="/MainStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+<div id="main">
+      <ul id="input-date">
+          <li>
+              <label for="day">DAY</label>
+              <input type="text" id="day" class="date" name="day" placeholder="DD">
+          </li>
+          <li>
+              <label for="month">MONTH</label>
+              <input type="text" id="month" class="date" name="month" placeholder="MM">
+          </li>
+          <li>
+              <label for="year">YEAR</label>
+              <input type="text" id="year" class="date" name="year" placeholder="YYYY">
+          </li>
+      </ul>
+      <ul id="errors">
+        <li id="day-err" class="error"></li>
+        <li id="month-err" class="error"></li>
+        <li id="year-err" class="error"></li>
+      </ul>
+  <div id="button-line">
+    <button type="button" id="button" onclick="submitInput()">
+        <img src="assets/images/icon-arrow.svg" alt="button">
+    </button>
+  </div>
+    <div id="results">
+        <p><span id="yyyy" class="output">--</span> years</p>
+        <p><span id="mm" class="output">--</span> months</p>
+        <p><span id="dd" class="output">--</span> days</p>
+    </div>
+
+</div>
+
+ <!-- <div class="attribution"> -->
+   <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Coded by <a href="#">M201200</a>.-->
+<!--  </div> -->
+<script type="text/javascript" src="/MainScripts.js"></script>
+</body>
+</html>
