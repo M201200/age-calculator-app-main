@@ -116,7 +116,8 @@ body {
 #button {
     min-width: 5em;
     min-height: 5em;
-
+    
+    border: 0;
     border-radius: 2.5em;
 
     color: var(--main-color);
