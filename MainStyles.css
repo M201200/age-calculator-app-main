@@ -26,7 +26,7 @@ body {
 
     width: min(40rem, 90%);
     border-radius: 1.2rem 1.2rem 8rem 1.2rem;
-    box-shadow: 3px 3px 10px gray;
+    box-shadow: 3px 3px 5px gray;
 
     gap: 0.2rem;
     
